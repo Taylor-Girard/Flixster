@@ -78,7 +78,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             String imageUrl;
             // when phone is in landscape
             // set imageUrl as backdrop
-            // otherwise, use poster image
+            // otherwise, use poster image (for both landscape and portrait)
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
 
                 imageUrl = movie.getBackDropPath();
