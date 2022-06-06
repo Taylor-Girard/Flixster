@@ -3,15 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/RelativeView"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/ivPoster"
         android:layout_width="120dp"
-        android:layout_height="wrap_content"
+        android:layout_height="180dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
         android:layout_marginStart="1dp"
         android:layout_marginTop='0dp'
         tools:srcCompat="@tools:sample/avatars" />
@@ -25,6 +26,8 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
         android:textSize="24sp"
         tools:text="Fantastic Beasts: The Secrets of Dumbledore" />
 
